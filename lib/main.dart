@@ -85,7 +85,7 @@ class _TokenFormScreenState extends State<TokenFormScreen> {
               TextFormField(
                 controller: _tokenController,
                 decoration: InputDecoration(
-                  labelText: 'Entrez votre token',
+                  labelText: 'Entrez votre token en entier',
                   border: OutlineInputBorder(),
                   // Aide visuelle pour l'utilisateur
                   helperText: 'Le token sera stocké de manière sécurisée',
@@ -93,7 +93,7 @@ class _TokenFormScreenState extends State<TokenFormScreen> {
                 // Validation du champ
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return ''Consulter le Token';
+                    return 'Veuillez entrer un token';
                   }
                   return null;
                 },
