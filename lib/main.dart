@@ -93,7 +93,7 @@ class _TokenFormScreenState extends State<TokenFormScreen> {
                 // Validation du champ
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return 'Veuillez entrer un token';
+                    return ''Consulter le Token';
                   }
                   return null;
                 },
